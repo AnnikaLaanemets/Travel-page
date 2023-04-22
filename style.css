@@ -1,10 +1,17 @@
+:root {
+  --color: #42103b;
+}
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #272044;
+  background: radial-gradient(
+    732px at 96.2% 89.9%,
+    rgb(61, 57, 138) 0%,
+    rgb(65, 11, 35) 92%
+  );
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -40,7 +47,7 @@ header h3 {
 header a {
   font-weight: 600;
   text-decoration: none;
-  color: #272044;
+  color: var(--color);
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -54,7 +61,6 @@ button {
 }
 
 section {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 100px 0;
 }
@@ -68,22 +74,29 @@ main h3 {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 5px;
+  text-align: center;
   text-transform: uppercase;
   opacity: 0.5;
   margin: 0;
 }
 
 main h2 {
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
-  color: #272044;
+  color: var(--color);
 }
 
 main p {
   padding: 5px 45px 5px 2px;
   opacity: 0.9;
-  line-height: 1.5;
+  line-height: 1.8;
   font-size: 20px;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
 }
 
 #about-image {
@@ -94,14 +107,55 @@ main p {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-gap: 42px;
+}
+
+.two-columns-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+#to-do {
+  background: #cdcccc;
+}
+.cards {
+  align-items: center;
+  grid-auto-flow: column;
+  grid-template: repeat(7, 1fr);
+  grid-template-rows: unset;
+  overflow: hidden;
+}
+
+.card {
+  width: 400px;
+  height: 1000px;
+  margin: 5%;
+  margin-inline-start: 20%;
+  margin-inline-end: 20%;
+  background-color: whitesmoke;
+}
+
+.card p {
+  padding: 25px;
+}
+
+iframe {
+  width: 100%;
+}
+
+h5 {
+  text-align: center;
+}
+
+.gallery {
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 50px;
+  grid-gap: 35px;
 }
 
 footer {
   background-image: linear-gradient(
-      rgba(39, 32, 68, 0.8),
-      rgba(39, 32, 68, 0.8)
+      rgba(92, 15, 50, 0.7),
+      rgba(92, 15, 50, 0.7)
     ),
     url("images/footer.jpg");
   background-repeat: no-repeat;
@@ -157,4 +211,22 @@ footer a {
   section {
     padding: 30px;
   }
+  .left,
+  .right {
+    display: none;
+  }
+}
+
+.arrow {
+  padding: 16px;
+  position: relative;
+  right: 0;
+  top: 360px;
+  font-size: 110px;
+  text-decoration: none;
+  font-weight: 600;
+  float: left;
+}
+.arrow-right {
+  float: right;
 }
