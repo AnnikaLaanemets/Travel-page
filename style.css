@@ -89,7 +89,7 @@ h6 {
   font-size: 28px;
   text-align: center;
   margin-top: 25px;
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 
 p {
@@ -186,7 +186,7 @@ footer p {
 footer li {
   list-style: none;
   margin: 0 30%;
-  padding: 2px;
+  padding: 10px;
 }
 
 footer a {
@@ -199,27 +199,37 @@ footer a {
   }
 
   h1 {
-    font-size: 40px;
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 26px;
   }
 
   h5 {
     font-size: 22px;
   }
+
   button {
     padding: 6px 12px;
   }
 
   p {
-    padding: 5px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
   }
 
   main p {
     font-size: 16px;
+    padding-left: 18px;
   }
 
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 20px;
+    padding: 2px;
   }
   section {
     padding: 30px;
@@ -234,13 +244,20 @@ footer a {
   }
 
   .card {
-    width: 370px;
-    height: 1000px;
+    width: 300px;
+    height: 980px;
+    margin: 1%;
+    margin-bottom: 5%;
   }
 
   h6 {
     font-weight: 500px;
     font-size: 20px;
+    text-align: center;
+  }
+
+  iframe {
+    margin-block-start: 3%;
   }
 
   footer h3 {
