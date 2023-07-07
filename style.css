@@ -95,7 +95,7 @@ h6 {
 p {
   font-size: 14px;
   margin: 3% 8%;
-  line-height: 1.6;
+  line-height: 1.5;
   opacity: 0.9;
 }
 
@@ -138,11 +138,12 @@ img {
 }
 
 .card {
-  width: 420px;
+  border-radius: 2px;
+  width: 400px;
   height: 1100px;
   margin: 5%;
-  margin-inline-start: 10%;
-  margin-inline-end: 10%;
+  margin-inline-start: 3%;
+  margin-inline-end: 3%;
   background-color: whitesmoke;
 }
 
